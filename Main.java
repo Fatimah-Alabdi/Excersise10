@@ -23,7 +23,7 @@ case 1:
     String carModel = scanner.next();
     System.out.print("Enter Rental Days: ");
     int carDays = scanner.nextInt();
-    Cars car = new Cars(carModel, carDays);
+    Vehicle car = new Cars(carModel, carDays);
     rentedVehicles.add(car);
     car.displayDetails();
     break;
@@ -32,7 +32,7 @@ case 2:
     String bikeBrand = scanner.next();
     System.out.print("Enter Rental Hours: ");
     int bikeHours = scanner.nextInt();
-    Bikes bike = new Bikes(bikeBrand, bikeHours);
+    Vehicle bike = new Bikes(bikeBrand, bikeHours);
     rentedVehicles.add(bike);
     bike.displayDetails();
 
@@ -42,7 +42,7 @@ case 2:
         String truckType = scanner.next();
         System.out.print("Enter Rental Weeks: ");
         int truckWeeks = scanner.nextInt();
-        Trucks truck = new Trucks(truckType, truckWeeks);
+        Vehicle truck = new Trucks(truckType, truckWeeks);
         rentedVehicles.add(truck);
         truck.displayDetails();
 
